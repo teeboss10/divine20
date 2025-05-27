@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Happy 20th Birthday Lolia!
+  To My Amazing Sister ❤️">
+  <link rel="shortcut icon" href="img/5.jpg" type="image/x-icon">
+  <title>Happy 20th Birthday, Sis!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Floating balloons container -->
+  <div class="balloons-container" id="balloon-container"></div>
+
+  <!-- Hero Section -->
+  <div class="hero-section container-fluid d-flex align-items-center">
+    <div class="row w-100">
+      <div class="col-xl-10 col-lg-10 col-md-10 offset-md-1 col-sm-12 col-12">
+        <img src="img/5.jpg" width="200" alt="hdivine at 7" class="img-thumbnail rounded-circle">
+        <h1 class="display-3">Happy 20th Birthday Lolia!</h1>
+        <h2 class="display-5">To My Amazing Sister ❤️</h2>
+        <p class="lead">May your day be as beautiful as your soul.</p>
+
+        <!-- Surprise wishes button -->
+        <button class="btn-gold" id="show-surprise">Open Surprise Wishes 🎁</button> <br>
+        <div class="mt-3">
+          <a href="#letter" rel="noopener noreferrer" class="">⏬</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Epistle Section -->
+  <section class="epistle-section container d-flex align-items-center my-5" id="letter">
+    <div class="row w-100">
+      <div class="col-md-5 text-center">
+        <img src="img/d-gal.jpg" alt="Letter Photo" class="img-fluid rounded" />
+      </div>
+      <div class="col-md-7">
+        <h3>A Letter To You</h3>
+        <p>
+          Dear Lolia,<br />
+          Watching you grow into the amazing woman you are today has been such a blessing. From your infectious smile to
+          your unstoppable spirit, you've filled our lives with joy and pride. Today, I just want to say how proud I am
+          of
+          you and how much I love you. Never stop chasing your dreams. You're destined for greatness!<br />
+          Happy 20th Birthday. Keep shining 🌟<br /><br />
+          Love always,<br />
+          Your Big Bro ❤️
+        </p>
+        <div class="mt-3">
+          <a href="#prayer" rel="noopener noreferrer" class="text-dark">Click here let me pray for you</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prayer Section -->
+  <section class="prayer-section container d-flex align-items-center my-5" id="prayer">
+    <div class="row w-100">
+      <div class="col-md-5 text-center hero">
+        <img src="img/6.jpg" alt="Prayer Photo" class="img-fluid rounded" />
+      </div>
+      <div class="col-md-7">
+        <h3>I Pray For You 🙏</h3>
+        <p>
+          May God's abundant blessings continue to guide your path.<br />
+          May you always find strength in love and hope.<br />
+          May your heart remain pure, your dreams alive, and your spirit unbreakable.<br /><br />
+          I pray for joy, health, and success to fill every chapter of your life.<br />
+          And may you always feel the loving presence of Dad watching over you.<br />
+          Amen. <br /> Go and take the world by storm .. might not say this every day but proud of the woman you are
+          becoming </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Address Section -->
+  <section class="address-section col-md-6 offset-3 my-5 p-4 bg-light rounded shadow-sm">
+    <h3>Where are you</h3>
+    <p>Please share your address so I can send you a special food delivery! 🍽️</p>
+    <form id="address-form" class="row g-3">
+      <div class="col-md-8">
+        <input type="text" class="form-control" id="address-input" placeholder="Enter your address here" required />
+      </div>
+      <div class="col-md-4">
+        <button type="submit" class="btn btn-primary w-100">Send Address</button>
+      </div>
+    </form>
+    <div id="address-feedback" class="mt-3 text-success" style="display:none;">
+      Thanks! Your address has been recorded.
+    </div>
+  </section>
+
+
+
+
+  <!-- Surprise Modal -->
+  <div class="modal" id="surprise-modal" role="dialog" aria-modal="true" aria-labelledby="surprise-title" tabindex="-1">
+    <div class="modal-content">
+      <h2 id="surprise-title">My darling daughter, 💕</h2>
+      <p class="text-start">
+        Today, as you celebrate your 20th birthday 🎉, I know Dad is smiling from heaven 😇 — not just because you’re
+        growing
+        into a beautiful, kind young woman 👑, but because you’ve made him so proud. ❤️
+
+        He always wished for you to have good character ✨, to stay focused 📘, and to take your studies seriously 📚.
+        And this year, you did it — you passed JAMB! 🥳🎓 <br>
+        I can hear him saying, “That’s my girl.” 👑
+      </p>
+      <p class="text-start">
+        Today, as you celebrate your 20th birthday 🎉, I know Dad is smiling from heaven 😇 — not just because you’re
+        He always wanted to spend more time with you 🤗 — to be there when you laugh 😂, when you cry 😢, when you
+        succeed 🌟.
+        Even though he isn’t physically here anymore, his love surrounds you every single day 💫.
+      </p>
+      <p class="text-start">
+        So, on this special day, I share this message on his behalf: <br>
+        <span class="fw-bolder">May your 20th year overflow with love 💖, wisdom 🧠, and the strength 💪 to keep
+          reaching
+          higher, Dad is proud of you 👏. And so am I. ❤️</span>
+
+        <br>
+        With all the love in the world,
+        — From Dad, written through your big brother’s heart 💌
+      </p>
+      <button class="close-btn" id="close-surprise">Close</button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Balloon emoji rising logic
+    const balloonsContainer = document.querySelector('.balloons-container');
+    const balloonsCount = 20;
+    const emojis = ['🎈', '🎉', '🎊', '🎂', '🎁'];
+
+    for (let i = 0; i < balloonsCount; i++) {
+      const balloon = document.createElement('div');
+      balloon.classList.add('balloon');
+      balloon.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+
+      // Random horizontal start position (0% to 100%)
+      balloon.style.left = Math.random() * 100 + 'vw';
+
+      // Random float duration (8s to 15s)
+      balloon.style.animationDuration = (8 + Math.random() * 7) + 's';
+
+      // Random horizontal movement within +-50px
+      balloon.style.setProperty('--random-x', (Math.random() * 100 - 50) + 'px');
+
+      balloonsContainer.appendChild(balloon);
+    }
+
+    // Surprise wishes modal open/close
+    const showBtn = document.getElementById('show-surprise');
+    const modal = document.getElementById('surprise-modal');
+    const closeBtn = document.getElementById('close-surprise');
+
+    if (showBtn && modal && closeBtn) {
+      showBtn.addEventListener('click', () => {
+        modal.classList.add('active');
+      });
+      closeBtn.addEventListener('click', () => {
+        modal.classList.remove('active');
+      });
+    } else {
+      console.warn('Modal or modal buttons not found in DOM');
+    }
+  </script>
+</body>
+
+</html>

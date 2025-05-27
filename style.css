@@ -1,0 +1,169 @@
+body {
+  background: #fff;
+  color: #d4af37;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-section {
+  min-height: 100vh;
+  /* full viewport height */
+  background: #f8f9fa;
+  padding: 80px 20px 40px;
+  color: #333;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.hero img {
+  object-fit: cover;
+  height: 400px;
+}
+
+.btn-gold {
+  background-color: #d4af37;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-gold:hover {
+  background-color: #b38b23;
+}
+
+/* Balloon container */
+.balloons-container {
+  position: fixed;
+  bottom: 0;
+  /* start from bottom */
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 9999;
+}
+
+.balloon {
+  font-size: 24px;
+  /* smaller size */
+  position: absolute;
+  bottom: 0;
+  /* start at bottom */
+  animation-name: floatUp;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  color: initial;
+  /* default emoji colors */
+  filter: none;
+  /* no shadow */
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-110vh) translateX(var(--random-x, 0));
+    opacity: 0;
+  }
+}
+
+
+/* Epistle section */
+.epistle-section {
+  max-width: 800px;
+  margin: 3rem auto;
+  background: #fff9e6;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0 15px #d4af37aa;
+  color: #665c00;
+}
+
+/* Prayer Section */
+.prayer-section {
+  max-width: 800px;
+  margin: 3rem auto;
+  background: #fff9e6;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0 15px #d4af37aa;
+  color: #665c00;
+}
+
+/* Photo Gallery */
+.gallery-section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem 3rem;
+}
+
+.gallery-section h3 {
+  color: #d4af37;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.gallery-img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px #d4af37aa;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  background: #fff9e6;
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 0 20px #d4af37cc;
+  color: #665c00;
+  position: relative;
+}
+
+.modal-content button.close-btn {
+  margin-top: 1.5rem;
+  background: #d4af37;
+  border: none;
+  color: #fff;
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
